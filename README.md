@@ -1,16 +1,203 @@
-# React + Vite
+# NexStock Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive Product Inventory Management System frontend built using **React.js** and **Vite**. The application provides an intuitive interface to manage products, monitor inventory, search items, and view real-time dashboard analytics.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- Modern Dashboard with Inventory Analytics
+- Product Listing (Grid & Table View)
+- Add, Edit & Delete Products
+- Product Details Page
+- Search Products
+- Category Filter
+- Product Sorting
+- Pagination
+- Responsive Design
+- Dark / Light Theme
+- Loading Spinner
+- Toast Notifications
+- Professional UI Design
+- REST API Integration
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Frontend
+
+- React.js
+- Vite
+- React Router DOM
+- Axios
+- Lucide React Icons
+- CSS3
+- JavaScript (ES6+)
+
+---
+
+## Project Structure
+
+```
+frontend
+│
+├── public
+│
+├── src
+│   ├── assets
+│   ├── components
+│   │   ├── Navbar
+│   │   ├── ProductCard
+│   │   ├── ProductTable
+│   │   ├── ProductFormModal
+│   │   ├── DeleteConfirmModal
+│   │   ├── DashboardStats
+│   │   ├── Toast
+│   │   └── LoadingSpinner
+│   │
+│   ├── context
+│   │   └── ThemeContext
+│   │
+│   ├── pages
+│   │   ├── Dashboard
+│   │   ├── ProductsPage
+│   │   └── ProductDetailsPage
+│   │
+│   ├── services
+│   │   └── api.js
+│   │
+│   ├── styles
+│   │
+│   ├── App.jsx
+│   └── main.jsx
+│
+├── package.json
+└── vite.config.js
+```
+
+---
+
+## Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/Avishaaaaa/inventory-management-frontend.git
+```
+
+Go to the project folder
+
+```bash
+cd inventory-management-frontend
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Start the development server
+
+```bash
+npm run dev
+```
+
+Build for production
+
+```bash
+npm run build
+```
+
+Preview production build
+
+```bash
+npm run preview
+```
+
+---
+
+## Backend API
+
+The frontend communicates with the backend using REST APIs.
+
+Example Base URL
+
+```
+http://localhost:5000/api
+```
+
+API file
+
+```
+src/services/api.js
+```
+
+---
+
+## Main Functionalities
+
+### Dashboard
+
+- Total Products
+- Total Categories
+- Total Stock
+- Total Inventory Value
+- Low Stock Alert
+- Category Distribution
+- Recently Added Products
+
+### Products
+
+- View all products
+- Search by product name
+- Filter by category
+- Sort products
+- Pagination
+- Grid View
+- Table View
+
+### Product Management
+
+- Add Product
+- Edit Product
+- Delete Product
+- View Product Details
+
+---
+
+## Screenshots
+
+Add screenshots of:
+
+- Dashboard
+- Products Page
+- Product Details
+- Add Product Modal
+- Dark Mode
+
+---
+
+## Future Enhancements
+
+- User Authentication
+- Role-Based Access Control
+- Export Inventory (PDF/Excel)
+- Image Upload to Cloud Storage
+- Inventory Charts & Graphs
+- Sales Analytics
+- Email Notifications
+- Barcode & QR Code Support
+
+---
+
+## Author
+
+**Avisha Aswal**
+
+
+
+## License
+
+This project is developed for educational and learning purposes.
